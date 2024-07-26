@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Quantidade de Teus</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Calculadora de Quantidade de Teus</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="file">Escolha um arquivo Excel (.xlsx):</label>
+        <input type="file" id="file" name="file" required>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
